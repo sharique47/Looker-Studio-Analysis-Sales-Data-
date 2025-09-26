@@ -1,135 +1,110 @@
-# Dashboard User Guide
+# Sales Data Dictionary
 
-## Overview
-This guide explains how to navigate and interpret the Google Looker Studio dashboard created for this data analysis project.
+## Dataset Overview
 
-## Dashboard Structure
+**File**: Sales_Data.xlsx  
+**Records**: 962 transactions  
+**Time Period**: 2023 sales data  
+**Business Domain**: Coffee and Tea retail sales  
 
-### Main Navigation
-- **Overview Tab**: High-level KPIs and summary metrics
-- **Detailed Analysis**: Granular data exploration
-- **Trends**: Historical patterns and time-series analysis
-- **Comparisons**: Cross-category performance analysis
+## Field Definitions
 
-## Interactive Features
+| Field Name | Data Type | Description | Example Values | Validation Rules |
+|------------|-----------|-------------|----------------|------------------|
+| Order ID | String | Unique transaction identifier | TCSTORD1, TCSTORD2 | Required, Unique, Format: TCSTORD + Number |
+| Date | Date | Transaction date | 2023-01-02 | Required, Valid date format (YYYY-MM-DD) |
+| Product | String | Product name | Espresso Energizer, Zen Green Tea | Required, Must be from product catalog |
+| Category | String | Product category | Coffee, Tea | Required, Limited to: Coffee, Tea |
+| State | String | Customer state | Michigan, Georgia | Required, Valid US state name |
+| Units Sold | Integer | Quantity purchased | 2, 3, 5 | Required, Positive integer |
+| Unit Price | Decimal | Price per unit | 2.50, 3.80 | Required, Positive number with 2 decimals |
+| Sales | Decimal | Total sale amount | 7.50, 11.40 | Required, Calculated: Units Sold × Unit Price |
 
-### Filters and Controls
-- **Date Range Selector**: Filter data by time period
-- **Category Filters**: Segment data by specific categories
-- **Geography Filter**: Location-based data filtering (if applicable)
-- **Custom Selections**: Multi-select dropdown menus
+## Product Catalog
 
-### Chart Interactions
-- **Hover Effects**: Detailed tooltips with additional context
-- **Click to Filter**: Select chart elements to filter other visuals
-- **Drill-Down**: Click to view more detailed breakdowns
-- **Cross-Filtering**: Selections affect multiple charts simultaneously
+### Coffee Products
+- **Espresso Energizer** - Premium espresso blend
+- **Velvety Vanilla Latte** - Vanilla-flavored coffee drink
+- **Bold Brewed Mocha** - Chocolate coffee combination
 
-## Key Performance Indicators (KPIs)
+### Tea Products  
+- **Zen Green Tea** - Premium green tea blend
+- **Mystic Oolong** - Traditional oolong tea
+- **Bold Black Tea** - Strong black tea blend
 
-### Primary Metrics
-- **Total Performance**: Overall achievement measure
-- **Growth Rate**: Period-over-period change percentage
-- **Efficiency Ratio**: Performance per unit measure
-- **Target Achievement**: Goal completion percentage
+## Geographic Coverage
 
-### Secondary Metrics
-- **Distribution Analysis**: Data spread across categories
-- **Trend Indicators**: Direction and velocity of change
-- **Comparative Ratios**: Relative performance measures
-- **Quality Metrics**: Data accuracy and completeness indicators
+**States Included**: Michigan, Georgia, North Carolina, Ohio, Texas, Pennsylvania, Florida, California, New York, Illinois, and others
 
-## Chart Types and Interpretation
+## Business Rules
 
-### Time Series Charts
-- **Purpose**: Show trends over time
-- **Interpretation**: Look for patterns, seasonality, and inflection points
-- **Best Practice**: Use consistent time periods for comparison
+### Pricing Structure
+- **Unit Prices**: Range from $2.50 to $3.80
+- **Price Consistency**: Each product has consistent unit pricing
+- **Premium Positioning**: All products positioned in premium price range
 
-### Bar/Column Charts
-- **Purpose**: Compare values across categories
-- **Interpretation**: Identify top performers and outliers
-- **Best Practice**: Sort by value for easier comparison
+### Sales Calculations
+- **Sales Amount**: Units Sold × Unit Price
+- **Revenue Recognition**: Point of sale transaction
+- **Currency**: US Dollars (USD)
 
-### Pie/Donut Charts
-- **Purpose**: Show composition and proportions
-- **Interpretation**: Focus on significant segments (>5%)
-- **Best Practice**: Limit to 5-7 categories for clarity
+## Data Quality Standards
 
-### Scatter Plots
-- **Purpose**: Show relationships between two variables
-- **Interpretation**: Look for correlation patterns and outliers
-- **Best Practice**: Include trend lines when appropriate
+### Completeness Requirements
+- **No Missing Values**: All fields must be populated
+- **Required Fields**: Order ID, Date, Product, Category, State, Units Sold, Unit Price, Sales
+- **Data Integrity**: Sales amount must equal Units Sold × Unit Price
 
-### Tables
-- **Purpose**: Display detailed data with precise values
-- **Interpretation**: Use for exact figures and rankings
-- **Best Practice**: Include relevant calculated fields
+### Validation Rules
+- **Order ID Format**: Must follow TCSTORD + sequential number pattern
+- **Date Range**: All dates must be within valid business operation period
+- **Product Validation**: Products must exist in approved catalog
+- **Category Consistency**: Products must match their assigned category
+- **Geographic Validation**: States must be valid US state names
+- **Numeric Validation**: Units and prices must be positive numbers
+- **Calculation Accuracy**: Sales total must be mathematically correct
 
-## Data Quality Indicators
+## Statistical Summary
 
-### Freshness Indicators
-- **Last Updated**: Timestamp of most recent data refresh
-- **Data Coverage**: Percentage of expected records present
-- **Quality Score**: Overall data reliability metric
+### Revenue Metrics
+- **Total Revenue**: $8,127.30
+- **Average Order Value**: $8.45
+- **Revenue Distribution**: Tea (50.4%), Coffee (49.6%)
 
-### Validation Checks
-- **Completeness**: Missing value percentages
-- **Accuracy**: Data validation error counts
-- **Consistency**: Cross-reference verification results
+### Volume Metrics
+- **Total Transactions**: 962
+- **Coffee Orders**: 492 (51.1%)
+- **Tea Orders**: 470 (48.9%)
 
-## Export and Sharing Options
+### Product Performance
+- **Products per Category**: 3 coffee, 3 tea products
+- **Price Range**: $2.50 - $3.80 per unit
+- **Average Units per Order**: Varies by product
 
-### Available Formats
-- **PDF Export**: Complete dashboard as PDF document
-- **Image Export**: Individual charts as PNG/JPEG
-- **Data Export**: Underlying data as CSV/Excel
-- **Embed Code**: HTML code for website integration
+## Change Log
 
-### Sharing Features
-- **Public Link**: Shareable URL with view permissions
-- **Email Reports**: Scheduled automated reports
-- **Presentation Mode**: Full-screen viewing option
-- **Mobile Access**: Responsive design for mobile devices
+| Version | Date | Changes | Updated By |
+|---------|------|---------|------------|
+| 1.0 | 2024-01-01 | Initial data structure | Sales Team |
+| 1.1 | 2024-01-15 | Added validation rules | Data Team |
+| 1.2 | 2024-02-01 | Enhanced product catalog | Business Team |
 
-## Troubleshooting
+## Data Usage Guidelines
 
-### Common Issues
-- **Slow Loading**: Large date ranges may impact performance
-- **Missing Data**: Check filter settings and data source connection
-- **Display Issues**: Refresh browser or clear cache
-- **Permission Errors**: Verify access rights to data source
+### Analysis Best Practices
+- **Temporal Analysis**: Consider seasonal patterns when analyzing by date
+- **Geographic Analysis**: Account for state population differences
+- **Product Comparison**: Compare products within same category for fair analysis
+- **Revenue Analysis**: Use both unit and dollar metrics for complete picture
 
-### Performance Optimization
-- **Filter Early**: Apply filters before loading large datasets
-- **Limit Date Ranges**: Use shorter periods for faster loading
-- **Cache Refresh**: Force refresh if data appears stale
-- **Browser Compatibility**: Use latest version of Chrome/Firefox
+### Common Pitfalls
+- **Double Counting**: Avoid summing already calculated sales totals
+- **Date Ranges**: Ensure consistent time periods for trend analysis
+- **Category Mixing**: Don't aggregate coffee and tea without context
+- **Unit vs Dollar**: Distinguish between unit sales and revenue analysis
 
-## Best Practices for Analysis
+## Contact Information
 
-### Data Exploration
-1. **Start Broad**: Begin with overview metrics
-2. **Drill Down**: Use filters to explore specific segments
-3. **Compare Periods**: Look at historical trends
-4. **Validate Insights**: Cross-reference multiple charts
-
-### Insight Generation
-1. **Identify Patterns**: Look for recurring themes
-2. **Investigate Anomalies**: Explore unusual data points
-3. **Consider Context**: Factor in external influences
-4. **Quantify Impact**: Measure significance of findings
-
-## Support and Feedback
-
-### Getting Help
-- **Documentation**: Refer to this guide and data dictionary
-- **Contact**: Reach out to dashboard creator for assistance
-- **Training**: Request walk-through session if needed
-- **Updates**: Subscribe to notifications for dashboard changes
-
-### Providing Feedback
-- **Usability**: Report navigation or display issues
-- **Content**: Suggest additional metrics or visualizations
-- **Performance**: Report slow loading or technical problems
-- **Enhancement**: Propose new features or improvements
+**Data Owner**: Sales Analytics Team  
+**Technical Contact**: Sharique Anjum (sharique.anj@gmail.com)  
+**Business Contact**: Sales Manager  
