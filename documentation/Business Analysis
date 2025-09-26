@@ -1,0 +1,253 @@
+# analysis/sales_performance_analysis.md
+
+## Sales Performance Analysis
+
+### Executive Summary
+The coffee and tea business generated **$8,127.30** in revenue across **962 transactions** with an average order value of **$8.45**. Tea products slightly outperformed coffee products in revenue generation (50.4% vs 49.6%).
+
+### Key Performance Indicators
+
+#### Revenue Metrics
+- **Total Revenue**: $8,127.30
+- **Coffee Revenue**: $4,031.30 (49.6%)
+- **Tea Revenue**: $4,096.00 (50.4%)
+- **Average Order Value**: $8.45
+
+#### Volume Metrics
+- **Total Orders**: 962 transactions
+- **Coffee Orders**: 492 (51.1%)
+- **Tea Orders**: 470 (48.9%)
+
+#### Performance Insights
+- **Revenue Balance**: Nearly equal split between categories indicates successful portfolio diversification
+- **Order Frequency**: Coffee has higher transaction frequency but lower revenue per transaction
+- **Premium Positioning**: $8.45 AOV suggests successful premium product positioning
+
+### Category Deep Dive
+
+#### Coffee Performance
+- **Revenue**: $4,031.30
+- **Orders**: 492
+- **Average Order Value**: $8.20
+- **Market Share**: 49.6% of revenue
+- **Products**: Espresso Energizer, Velvety Vanilla Latte, Bold Brewed Mocha
+
+#### Tea Performance  
+- **Revenue**: $4,096.00
+- **Orders**: 470
+- **Average Order Value**: $8.72
+- **Market Share**: 50.4% of revenue
+- **Products**: Zen Green Tea, Mystic Oolong, Bold Black Tea
+
+### Strategic Recommendations
+1. **Tea Focus**: Leverage tea's higher AOV for growth initiatives
+2. **Coffee Optimization**: Increase coffee AOV through upselling/premium options
+3. **Portfolio Balance**: Maintain current 50/50 category strategy
+4. **Market Expansion**: Scale successful model to new geographic markets
+
+---
+
+# analysis/product_analysis.md
+
+## Individual Product Performance Analysis
+
+### Product Portfolio Overview
+The business operates with a balanced 6-product portfolio: 3 coffee and 3 tea products, each positioned in the premium beverage segment.
+
+### Product Performance Ranking
+*Note: Detailed product-level performance would require individual product revenue breakdown from the dashboard*
+
+#### Coffee Products Analysis
+1. **Espresso Energizer**
+   - Category: Coffee
+   - Positioning: Premium espresso blend
+   - Price Point: $2.50 per unit
+
+2. **Velvety Vanilla Latte**
+   - Category: Coffee  
+   - Positioning: Flavored premium drink
+   - Price Point: $3.80 per unit
+
+3. **Bold Brewed Mocha**
+   - Category: Coffee
+   - Positioning: Chocolate coffee combination
+   - Price Point: Mid-range premium
+
+#### Tea Products Analysis
+1. **Zen Green Tea**
+   - Category: Tea
+   - Positioning: Premium green tea
+   - Price Point: $3.50 per unit
+
+2. **Mystic Oolong**
+   - Category: Tea
+   - Positioning: Traditional premium tea
+   - Price Point: Premium positioning
+
+3. **Bold Black Tea**
+   - Category: Tea
+   - Positioning: Strong traditional tea
+   - Price Point: Premium positioning
+
+### Product Strategy Recommendations
+- **Price Optimization**: Analyze individual product profitability
+- **Portfolio Expansion**: Consider seasonal or limited edition products
+- **Cross-Selling**: Bundle coffee and tea products
+- **Premium Focus**: Maintain premium positioning across all products
+
+---
+
+# analysis/geographic_analysis.md
+
+## Geographic Market Analysis
+
+### Market Coverage
+The business operates across multiple US states with varying performance levels, indicating successful geographic diversification.
+
+#### Primary Markets
+- **Michigan**: Strong performance market
+- **Georgia**: Key southeastern presence  
+- **North Carolina**: Mid-Atlantic market penetration
+- **Ohio**: Midwest market presence
+- **Texas**: Major market opportunity
+
+#### Secondary Markets
+- Pennsylvania, Florida, California, New York, Illinois
+- Additional states with varying sales volumes
+
+### Geographic Performance Insights
+- **Market Diversification**: Reduces risk through geographic spread
+- **Regional Preferences**: May vary between coffee and tea preferences
+- **Growth Opportunities**: Identify top-performing states for expansion
+- **Logistics Efficiency**: Multi-state distribution capabilities
+
+### Expansion Recommendations
+1. **Market Analysis**: Identify highest revenue-per-state opportunities
+2. **Regional Strategy**: Tailor product mix to regional preferences  
+3. **Distribution Optimization**: Improve logistics in high-volume states
+4. **New Market Entry**: Research expansion into underserved regions
+
+---
+
+# insights/executive_summary.md
+
+## Executive Summary
+
+### Business Overview
+Coffee and tea specialty beverage business with **$8,127.30** in analyzed revenue across **962 transactions**, demonstrating strong performance in the premium beverage market.
+
+### Key Achievements
+- **Balanced Portfolio**: 50.4% tea, 49.6% coffee revenue split
+- **Premium Positioning**: $8.45 average order value
+- **Geographic Reach**: Multi-state market presence
+- **Product Diversity**: 6-product balanced portfolio
+
+### Strategic Position
+- **Market Leadership**: Premium positioning in growing beverage market
+- **Operational Excellence**: Efficient multi-state distribution
+- **Product Innovation**: Balanced traditional and specialty offerings
+- **Growth Potential**: Strong foundation for expansion
+
+### Financial Highlights
+- **Revenue Growth**: Strong baseline performance
+- **Margin Opportunity**: Premium pricing strategy
+- **Market Share**: Balanced category performance
+- **Scalability**: Proven multi-market model
+
+### Next Steps
+1. **Market Expansion**: Scale to additional states
+2. **Product Development**: Seasonal and limited offerings
+3. **Digital Integration**: E-commerce and online presence
+4. **Customer Analytics**: Deeper customer behavior analysis
+
+---
+
+# documentation/methodology.md
+
+## Analysis Methodology
+
+### Data Collection Process
+1. **Source System**: Excel-based transaction recording
+2. **Data Extraction**: 962 transaction records analyzed
+3. **Time Period**: 2023 sales data
+4. **Scope**: Complete transaction history
+
+### Analysis Framework
+- **Descriptive Analytics**: Historical performance review
+- **Comparative Analysis**: Category and geographic comparison
+- **Performance Metrics**: KPI development and tracking
+- **Business Intelligence**: Strategic insight generation
+
+### Tools and Technologies
+- **Microsoft Excel**: Data source and initial processing
+- **Google Sheets**: Cloud-based collaboration and sharing
+- **Google Looker Studio**: Interactive visualization and dashboards
+- **Statistical Analysis**: Revenue, volume, and performance calculations
+
+### Quality Assurance
+- **Data Validation**: Mathematical accuracy verification
+- **Completeness Check**: All required fields populated
+- **Consistency Review**: Standardized naming and formatting
+- **Business Rule Validation**: Logical relationship verification
+
+---
+
+# documentation/technical_notes.md
+
+## Technical Implementation Notes
+
+### Data Pipeline Architecture
+1. **Source**: Excel workbook (Sales_Data.xlsx)
+2. **Processing**: Data cleaning and standardization
+3. **Storage**: Google Sheets cloud hosting
+4. **Visualization**: Looker Studio dashboard creation
+5. **Analysis**: Statistical and business intelligence analysis
+
+### File Specifications
+- **Format**: Microsoft Excel (.xlsx)
+- **Size**: 962 rows × 8 columns
+- **Encoding**: UTF-8 standard
+- **Date Format**: YYYY-MM-DD standard
+
+### Dashboard Features
+- **Real-time Updates**: Connected to live Google Sheets data
+- **Interactive Filtering**: Dynamic data exploration
+- **Cross-Chart Filtering**: Synchronized dashboard behavior
+- **Export Capabilities**: PDF and data export options
+- **Mobile Responsive**: Optimized for multiple device types
+
+### Performance Considerations
+- **Data Volume**: 962 records easily handled
+- **Refresh Rate**: Real-time updates from source
+- **Query Optimization**: Efficient calculation and aggregation
+- **Caching Strategy**: Optimized loading performance
+
+---
+
+# insights/business_recommendations.md
+
+## Strategic Business Recommendations
+
+### Immediate Actions (0-3 months)
+1. **Tea Category Focus**: Leverage tea's higher AOV for marketing initiatives
+2. **Geographic Analysis**: Identify top 3 performing states for expansion investment
+3. **Product Pricing Review**: Analyze coffee pricing to improve AOV
+4. **Customer Segmentation**: Develop customer profiles for targeted marketing
+
+### Medium-term Initiatives (3-12 months)
+1. **Market Expansion**: Enter 2-3 new high-potential states
+2. **Product Line Extension**: Add seasonal or limited edition products
+3. **Digital Commerce**: Develop e-commerce capabilities
+4. **Supply Chain Optimization**: Improve distribution efficiency
+
+### Long-term Strategy (1-3 years)
+1. **National Expansion**: Scale to 20+ states
+2. **Brand Development**: Build national brand recognition
+3. **Product Innovation**: Develop proprietary blends and formulations
+4. **Strategic Partnerships**: Retail and distribution partnerships
+
+### Success Metrics
+- **Revenue Growth**: Target 25% annual revenue increase
+- **Market Expansion**: 5+ new states annually
+- **AOV Improvement**: Increase to $10+ average order value
+- **Customer Retention**: Develop repeat customer programs
