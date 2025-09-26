@@ -1,10 +1,10 @@
-# Google Looker Studio Data Visualization Project
+# Coffee & Tea Sales Data Analysis
 
-A comprehensive data visualization and analysis project using Google Looker Studio to transform raw spreadsheet data into interactive business intelligence dashboards.
+A comprehensive sales performance analysis of a coffee and tea business using Excel data processing, Google Looker Studio visualization, and statistical analysis techniques.
 
 ## Project Overview
 
-This project demonstrates advanced data visualization skills using Google Looker Studio to create interactive dashboards from Google Sheets data. The analysis provides actionable business insights through professional-grade visualizations and KPI tracking.
+This project analyzes 962 sales transactions across 6 beverage products (coffee and tea) sold in multiple US states. The analysis provides insights into product performance, geographic distribution, sales trends, and business intelligence for strategic decision-making.
 
 ## Live Demo
 
@@ -12,190 +12,192 @@ This project demonstrates advanced data visualization skills using Google Looker
 
 **Source Dataset**: [Google Sheets Data](https://docs.google.com/spreadsheets/d/1yELbXCdatLvEqDAnXvDQFA8Dzaegh_Eq9ExmJHQerfg/edit?gid=0#gid=0)
 
+## Dataset Summary
+
+- **Total Transactions**: 962 sales orders
+- **Total Revenue**: $8,127.30
+- **Average Order Value**: $8.45
+- **Product Categories**: Coffee (49.6%) vs Tea (50.4%)
+- **Geographic Coverage**: Multiple US states
+- **Time Period**: 2023 sales data
+
+## Key Business Insights
+
+### Revenue Performance
+- **Coffee Sales**: $4,031.30 (492 orders) - 49.6% of total revenue
+- **Tea Sales**: $4,096.00 (470 orders) - 50.4% of total revenue
+- **Balanced Portfolio**: Nearly equal revenue split between categories
+
+### Product Portfolio
+- **6 Unique Products**:
+  - Espresso Energizer (Coffee)
+  - Zen Green Tea (Tea)
+  - Velvety Vanilla Latte (Coffee)
+  - Bold Brewed Mocha (Coffee)
+  - Mystic Oolong (Tea)
+  - Bold Black Tea (Tea)
+
+### Geographic Distribution
+- **Multi-state Coverage**: Sales across major US states
+- **Top Markets**: Michigan, Georgia, North Carolina, Ohio, Texas
+
 ## Technologies Used
 
-- **Google Looker Studio** - Interactive dashboard creation and data visualization
-- **Google Sheets** - Data source and storage
-- **Data Connectors** - Real-time data integration
-- **Calculated Fields** - Custom metrics and KPIs
-- **Interactive Filtering** - Dynamic data exploration
-
-## Project Features
-
-### Dashboard Capabilities
-- **Real-time Data Connection** - Live updates from Google Sheets
-- **Interactive Visualizations** - Charts, graphs, and tables with drill-down capability
-- **Custom Metrics** - Calculated fields for advanced analytics
-- **Responsive Design** - Optimized for desktop and mobile viewing
-- **Export Functionality** - PDF and image export options
-
-### Visualization Types
-- **Time Series Analysis** - Trend identification and forecasting
-- **Comparative Analysis** - Performance benchmarking
-- **Geographic Mapping** - Location-based insights (if applicable)
-- **Distribution Charts** - Data spread and frequency analysis
-- **KPI Scorecards** - Key performance indicators tracking
-
-## Data Architecture
-
-### Data Source
-- **Platform**: Google Sheets
-- **Update Frequency**: Real-time/Manual updates
-- **Data Quality**: Validated and cleaned dataset
-- **Access Control**: Shared with appropriate permissions
-
-### Data Processing
-- **Data Transformation** - Cleaning and standardization in Looker Studio
-- **Calculated Fields** - Custom metrics creation
-- **Data Relationships** - Proper field mapping and connections
-- **Performance Optimization** - Efficient query design
-
-## Dashboard Structure
-
-### Key Performance Indicators (KPIs)
-- Primary business metrics displayed prominently
-- Trend indicators with period-over-period comparisons
-- Goal tracking and performance targets
-- Alert thresholds for critical metrics
-
-### Analytical Views
-- **Overview Dashboard** - High-level summary metrics
-- **Detailed Analysis** - Granular data exploration
-- **Trend Analysis** - Historical patterns and forecasting
-- **Comparative Views** - Cross-category performance analysis
-
-## Technical Implementation
-
-### Data Connection Setup
-1. **Google Sheets Integration** - Direct connector configuration
-2. **Field Mapping** - Proper data type assignment
-3. **Refresh Settings** - Automated data updates
-4. **Performance Tuning** - Query optimization
-
-### Visualization Design
-1. **Chart Selection** - Appropriate visualization types for each metric
-2. **Color Schemes** - Professional and accessible design
-3. **Layout Optimization** - Logical information hierarchy
-4. **Interactive Elements** - Filters and drill-down capabilities
-
-## Business Value
-
-### Insights Generated
-- **Performance Trends** - Historical analysis and pattern identification
-- **Operational Efficiency** - Process optimization opportunities
-- **Strategic Planning** - Data-driven decision support
-- **Stakeholder Communication** - Clear visual storytelling
-
-### Use Cases
-- **Executive Reporting** - C-level dashboard for strategic oversight
-- **Operational Monitoring** - Real-time performance tracking
-- **Team Analytics** - Department-specific metrics
-- **Client Presentations** - Professional data visualization
-
-## Skills Demonstrated
-
-### Technical Skills
-- **Data Visualization** - Advanced chart design and layout
-- **Data Analysis** - Statistical analysis and interpretation
-- **Business Intelligence** - KPI development and tracking
-- **Data Modeling** - Relationship mapping and calculated fields
-- **Tool Proficiency** - Expert-level Looker Studio usage
-
-### Business Skills
-- **Requirements Gathering** - Understanding stakeholder needs
-- **Data Storytelling** - Compelling narrative creation
-- **Performance Measurement** - Meaningful metrics selection
-- **Communication** - Clear insight presentation
+- **Microsoft Excel** - Data source and initial processing
+- **Google Sheets** - Cloud-based data hosting and collaboration
+- **Google Looker Studio** - Interactive dashboard creation and visualization
+- **Statistical Analysis** - Performance metrics and trend analysis
+- **Data Visualization** - Charts, graphs, and KPI tracking
 
 ## Project Structure
 
 ```
-looker-studio-analysis/
+coffee-tea-sales-analysis/
 ├── README.md
 ├── data/
-│   ├── sample_data.csv
+│   ├── Sales_Data.xlsx
+│   ├── sales_data_clean.csv
 │   └── data_dictionary.md
-├── documentation/
-│   ├── dashboard_guide.md
-│   ├── data_sources.md
-│   └── kpi_definitions.md
-├── screenshots/
-│   ├── dashboard_overview.png
-│   ├── detailed_charts.png
-│   └── mobile_view.png
-└── exports/
-    ├── dashboard_pdf.pdf
-    └── data_export.csv
+├── analysis/
+│   ├── sales_performance_analysis.md
+│   ├── product_analysis.md
+│   └── geographic_analysis.md
+├── visualizations/
+│   ├── dashboard_screenshots/
+│   ├── chart_exports/
+│   └── looker_studio_guide.md
+├── insights/
+│   ├── business_recommendations.md
+│   ├── kpi_summary.md
+│   └── executive_summary.md
+└── documentation/
+    ├── methodology.md
+    ├── data_quality_report.md
+    └── technical_notes.md
 ```
 
-## Setup Instructions
+## Analysis Highlights
 
-### Prerequisites
-- Google Account with access to Looker Studio
-- Google Sheets with source data
-- Appropriate sharing permissions
+### Sales Performance Metrics
+- **Revenue Distribution**: Tea slightly outperforms coffee (50.4% vs 49.6%)
+- **Order Frequency**: Coffee has higher order frequency (492 vs 470)
+- **Average Order Size**: Tea has slightly higher average order value
+- **Product Diversity**: Balanced 3-product offering in each category
 
-### Accessing the Dashboard
-1. **Click the live demo link** to view the interactive dashboard
-2. **Use filter controls** to explore different data segments
-3. **Hover over charts** for detailed tooltips and insights
-4. **Export options** available for sharing and presentations
+### Geographic Insights
+- **Market Penetration**: Strong presence across multiple states
+- **Regional Performance**: Varied performance across different markets
+- **Growth Opportunities**: Potential for market expansion analysis
+- **Distribution Efficiency**: Multi-state logistics analysis
 
-### Replicating the Project
-1. **Copy the source Google Sheet** to your Google Drive
-2. **Create new Looker Studio report** 
-3. **Connect to your copied data source**
-4. **Rebuild visualizations** following the dashboard structure
-5. **Configure calculated fields** and formatting
+### Product Performance
+- **Category Balance**: Well-diversified product portfolio
+- **Premium Positioning**: Average $8.45 order value suggests premium products
+- **Market Response**: Strong performance in both traditional (coffee) and growing (tea) segments
 
-## Key Insights
+## Key Performance Indicators (KPIs)
 
-### Performance Highlights
-- [Specific insight from your data analysis]
-- [Trend identification and implications]
-- [Comparative analysis results]
-- [Actionable recommendations]
+### Financial KPIs
+- **Total Revenue**: $8,127.30
+- **Average Order Value**: $8.45
+- **Revenue per Product**: ~$1,354 average
+- **Category Revenue Split**: 50.4% Tea, 49.6% Coffee
 
-### Data Quality Notes
-- **Completeness**: Data coverage and missing value handling
-- **Accuracy**: Validation steps and quality checks
-- **Timeliness**: Update frequency and data freshness
-- **Relevance**: Business alignment and metric selection
+### Operational KPIs
+- **Total Orders**: 962 transactions
+- **Product Variety**: 6 unique SKUs
+- **Geographic Reach**: Multiple US states
+- **Category Distribution**: Balanced coffee/tea mix
+
+### Growth Indicators
+- **Market Diversification**: Two-category strategy
+- **Geographic Expansion**: Multi-state presence
+- **Product Innovation**: Premium product positioning
+- **Customer Engagement**: Consistent order patterns
+
+## Business Intelligence Insights
+
+### Strategic Recommendations
+1. **Product Focus**: Tea category shows slight revenue advantage
+2. **Geographic Expansion**: Identify top-performing states for growth
+3. **Portfolio Optimization**: Maintain balanced coffee/tea offering
+4. **Price Optimization**: $8.45 AOV suggests premium market positioning
+
+### Market Opportunities
+- **Tea Market Growth**: Capitalize on strong tea performance
+- **Geographic Expansion**: Expand in high-performing states
+- **Product Development**: Consider new flavors in successful categories
+- **Customer Analytics**: Deeper analysis of repeat customers
+
+## Technical Implementation
+
+### Data Processing Pipeline
+1. **Data Collection**: Excel-based transaction recording
+2. **Data Cleaning**: Standardization and validation
+3. **Cloud Migration**: Transfer to Google Sheets for accessibility
+4. **Visualization**: Looker Studio dashboard creation
+5. **Analysis**: Statistical and business intelligence analysis
+
+### Visualization Features
+- **Interactive Dashboards**: Real-time filtering and exploration
+- **Geographic Mapping**: State-by-state performance visualization
+- **Time Series Analysis**: Sales trends over time
+- **Comparative Analysis**: Product and category performance
+- **KPI Scorecards**: Key metrics monitoring
+
+## Skills Demonstrated
+
+### Data Analysis
+- **Excel Proficiency**: Advanced data manipulation and analysis
+- **Statistical Analysis**: Revenue, averages, distributions
+- **Business Intelligence**: KPI development and tracking
+- **Data Visualization**: Chart creation and dashboard design
+
+### Technical Skills
+- **Data Pipeline Management**: End-to-end data workflow
+- **Cloud Integration**: Google Workspace ecosystem
+- **Dashboard Development**: Interactive visualization creation
+- **Documentation**: Comprehensive project documentation
+
+### Business Acumen
+- **Retail Analytics**: Understanding of sales performance metrics
+- **Market Analysis**: Geographic and product performance evaluation
+- **Strategic Thinking**: Business recommendations based on data
+- **Stakeholder Communication**: Clear insight presentation
+
+## Data Quality Assurance
+
+### Validation Checks
+- **Completeness**: All required fields populated
+- **Accuracy**: Mathematical validation of calculations
+- **Consistency**: Standardized product and location names
+- **Integrity**: Cross-validation of sales totals
+
+### Quality Metrics
+- **Data Coverage**: 100% transaction capture
+- **Field Completeness**: No missing critical data
+- **Calculation Accuracy**: Verified unit price × quantity = sales
+- **Temporal Consistency**: Proper date formatting and sequencing
 
 ## Future Enhancements
 
-### Planned Improvements
-- **Advanced Analytics** - Predictive modeling integration
-- **Additional Data Sources** - Multi-platform data consolidation
-- **Automation** - Scheduled reporting and alerts
-- **Enhanced Interactivity** - Advanced filtering and drill-down
+### Advanced Analytics
+- **Customer Segmentation**: RFM analysis and customer lifetime value
+- **Seasonality Analysis**: Time-based pattern identification
+- **Predictive Modeling**: Sales forecasting and trend prediction
+- **Cohort Analysis**: Customer behavior over time
 
-### Scalability Considerations
-- **Data Volume** - Handling larger datasets
-- **User Access** - Role-based dashboard permissions
-- **Performance** - Optimization for faster loading
-- **Integration** - API connections for automated updates
-
-## Best Practices Applied
-
-### Data Visualization
-- **Clear Hierarchy** - Logical information flow
-- **Consistent Design** - Unified color schemes and fonts
-- **Accessibility** - Color-blind friendly palettes
-- **Mobile Optimization** - Responsive layout design
-
-### Business Intelligence
-- **Relevant Metrics** - Business-aligned KPIs
-- **Actionable Insights** - Decision-supporting analysis
-- **Context Provision** - Comparative benchmarks
-- **Trend Analysis** - Historical perspective and forecasting
+### Visualization Improvements
+- **Real-time Updates**: Automated data refresh
+- **Mobile Optimization**: Responsive dashboard design
+- **Advanced Filtering**: Multi-dimensional data exploration
+- **Export Capabilities**: Automated report generation
 
 ## Author
 
 **Sharique Anjum**
 - **Email**: sharique.anj@gmail.com
-- **LinkedIn**: [Your LinkedIn Profile]
-- **Portfolio**: [Your Portfolio URL]
+
 
 ## Project Links
 
@@ -204,4 +206,4 @@ looker-studio-analysis/
 
 ---
 
-*This project showcases professional data visualization and business intelligence skills using Google Looker Studio for creating interactive, insightful dashboards from raw data sources.*
+*This project showcases end-to-end data analysis capabilities from raw Excel data to interactive business intelligence dashboards, demonstrating skills in data processing, visualization, and business insight generation.*
